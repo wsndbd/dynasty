@@ -1,7 +1,7 @@
 digraph g {
 	edge [dir=none];
 	node [shape=rect];
-	graph [ splines="ortho"; dpi = 300 ];
+	graph [ splines="ortho"; dpi = 800 ];
 	rankdir="LR";
 	graph [fontname="SimHei"];
 	node [shape=plaintext, fontname="SimHei"];
@@ -125,7 +125,7 @@ digraph g {
 	szxzdd[label="18肃宗孝章帝炟"];
 	qczwk[label="千乘贞王伉"];
 	qhxwq[label="清河孝王庆"];
-	xhdz[label="18孝和帝肇"];
+	xhdz[label="19孝和帝肇"];
 	jbhws[label="济北惠王寿"];
 	hjxwk[label="河间孝王开"];
 	laywc[label="乐安夷王宠"];
