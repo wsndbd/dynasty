@@ -1,0 +1,147 @@
+digraph g {
+	edge [dir=none];
+	node [shape=rect];
+	graph [ splines="ortho"; dpi = 300 ];
+	rankdir="LR";
+	graph [fontname="SimHei"];
+	node [shape=plaintext, fontname="SimHei"];
+	//{rank=same; qdhwf; xhdy; tzxwdh};
+	
+    copyright[label="\nPowered by paldin";fontsize = 12]
+    
+	"曹魏(220-266)"
+	"三国(220~280)"
+	"刘汉(-202~8---25~220)"
+	
+	tz->qdhwf
+	tz->xhdy
+	tz->tzxwdh;
+	qdhwf->cyjwz;
+	xhdy->qsdg;
+	xhdy->hsdh;
+	tzxwdh->xjdq;
+	cyjwz->cygwx;
+	xjdq->szxwdc;
+	xjdq->csdwf;
+	cygwx->cyqwy;
+	szxwdc->ltzj;
+	szxwdc->cyawb;
+	szxwdc->xzdfl;
+	csdwf->cljhm;
+	cyqwy->cyjwy;
+	ltzj->shsj;
+	cyawb->fdh;
+	cljhm->cldhxq;
+	cljhm->yltsw;
+	cyjwy->cyhww;
+	shsj->zzxxdx;
+	cldhxq->cwtsl;
+	yltsw->jldwh;
+	cyhww->cyhws;
+	zzxxdx->xyds;
+	zzxxdx->cxwx;
+	cwtsl->zz;
+	jldwh->ndlq;
+	cyhws->shx;
+	xyds->xcda;
+	xyds->dtgwk;
+	xyds->zsxwx;
+	cxwx->gqyhx;
+	zz->gsdx;
+	ndlq->szgwdx;
+	shx->shm;
+	dtgwk->xadx;
+	zsxwx->xpdk;
+	gqyhx->gqhx;
+	szgwdx->xzxmdz;
+	shm->jsdpz;
+	gqhx->rzy;
+	xzxmdz->szxzdd;
+	szxzdd->qczwk;
+	szxzdd->qhxwq;
+	szxzdd->xhdz;
+	szxzdd->jbhws;
+	szxzdd->hjxwk;
+	qczwk->laywc;
+	qhxwq->xadh;
+	xhdz->sdl;
+	jbhws->qsdy;
+	hjxwk->lwhy;
+	hjxwk->xdths;
+	laywc->bhxwh;
+	xadh->xsdb;
+	lwhy->xhdz1;
+	xdths->xdthc;
+	bhxwh->xzdz;
+	xsdb->xcdb;
+	xdthc->xldh;
+	xldh->hsdb;
+	xldh->xdx;
+	
+	tz[label="1太祖高皇帝邦【西汉】"];
+	qdhwf[label="齐悼惠王肥"];
+	xhdy[label="2孝惠帝盈"];
+	tzxwdh[label="5太宗孝文帝恒"];
+	cyjwz[label="城阳景王章"];
+	qsdg[label="3前少帝恭"];
+	hsdh[label="4后少帝弘"];
+	xjdq[label="6孝景帝启"];
+	cygwx[label="城阳共王喜"];
+	szxwdc[label="7世宗孝武帝彻"];
+	csdwf[label="长沙定王发"];
+	cyqwy[label="城阳顷王延"];
+	ltzj[label="戾太子据"];
+	cyawb[label="昌邑哀王髀"];
+	xzdfl[label="8孝昭帝弗陵"];
+	cljhm[label="舂陵节侯买"];
+	cyjwy[label="城阳敬王义"];
+	shsj[label="史皇孙进"];
+	fdh[label="9废帝贺"];
+	cldhxq[label="舂陵戴侯熊渠"];
+	yltsw[label="郁林太守外"];
+	cyhww[label="城阳惠王武"];
+	zzxxdx[label="10中宗孝宣帝询"];
+	cwtsl[label="苍梧太守利"];
+	jldwh[label="巨鹿都尉回"];
+	cyhws[label="城阳荒王顺"];
+	xyds[label="11孝元帝奭"];
+	cxwx[label="楚孝王嚣"];
+	zz[label="子张"];
+	ndlq[label="南顿令钦"];
+	shx[label="式侯宪"];
+	xcda[label="12孝成帝骜"];
+	dtgwk[label="定陶恭王康"];
+	zsxwx[label="中山孝王兴"];
+	gqyhx[label="广戚炀侯勋"];
+	gsdx[label="更始帝玄(23-25)"];
+	szgwdx[label="16世祖光武帝秀【东汉】"];
+	shm[label="式侯萌"];
+	xadx[label="13孝哀帝欣"];
+	xpdk[label="14孝平帝衎"];
+	gqhx[label="广戚侯显"];
+	xzxmdz[label="17显宗孝明帝庄"];
+	jsdpz[label="建世帝盆子(25-27)"];
+	rzy[label="15孺子婴"];
+	szxzdd[label="18肃宗孝章帝炟"];
+	qczwk[label="千乘贞王伉"];
+	qhxwq[label="清河孝王庆"];
+	xhdz[label="18孝和帝肇"];
+	jbhws[label="济北惠王寿"];
+	hjxwk[label="河间孝王开"];
+	laywc[label="乐安夷王宠"];
+	xadh[label="21孝安帝祜"];
+	sdl[label="20殇帝隆"];
+	qsdy[label="22前少帝懿"];
+	lwhy[label="蠡吾侯翼"];
+	xdths[label="解渎亭侯淑"];
+	bhxwh[label="渤海孝王鸿"];
+	xsdb[label="23孝顺帝保"];
+	xhdz1[label="26孝桓帝志"];
+	xdthc[label="解渎亭侯苌"];
+	xzdz[label="25孝质帝缵"];
+	xcdb[label="24孝冲帝炳"];
+	xldh[label="27孝灵帝宏"];
+	hsdb[label="28后少帝辨"];
+	xdx[label="29献帝协"];
+	
+}
