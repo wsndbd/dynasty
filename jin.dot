@@ -1,0 +1,61 @@
+digraph g {
+	edge [dir=none];
+	node [shape=rect];
+	graph [ splines="ortho"; dpi = 800 ];
+	graph [fontname="SimHei"];
+	node [shape=plaintext, fontname="SimHei"];
+	//{rank=same; qdhwf; xhdy; tzxwdh};
+	
+	 
+	xd->jd;
+	xd->wd;
+	xd->lyww;
+	xd->zw;
+	wd->wudi;
+	lyww->lygw;
+    wudi->huidi;
+    wudi->wuxiaowang;
+    wudi->huaidi;
+    lygw->yuandi;
+    wuxiaowang->jinmindi;
+    yuandi->jinmingdi;
+    yuandi->jinjianwendi;
+    jinmingdi->jinchengdi;
+    jinmingdi->jinkangdi;
+    jinjianwendi->jinxiaowudi;
+    jinchengdi->jinaidi;
+    jinchengdi->jinfeidi;
+    jinkangdi->jinmudi;
+    jinxiaowudi->jinandi;
+    jinxiaowudi->jingongdi;
+	
+	xd[label="晋宣帝司马懿"];
+	jd[label="晋景帝师"];
+	wd[label="晋文帝昭"];
+	lyww[label="琅琊武王伷"];
+	zw[label="3晋建始帝赵王伦"];
+	wudi[label="1晋武帝炎【西晋】"];
+	lygw[label="琅邪恭王觐"];
+	huidi[label="2,4晋惠帝衷"];
+	wuxiaowang[label="吴孝王晏"];
+	huaidi[label="5晋怀帝炽"];
+	yuandi[label="1晋元帝睿【东晋】"];
+	jinmindi[label="6晋愍帝邺"];
+	jinmingdi[label="2晋明帝绍"];
+	jinjianwendi[label="8晋简文帝昱"];
+	jinchengdi[label="3晋成帝衍"];
+	jinkangdi[label="4晋康帝岳"];
+	jinxiaowudi[label="9晋孝武帝曜"];
+	jinaidi[label="6晋哀帝丕"];
+	jinfeidi[label="7晋废帝奕"];
+	jinmudi[label="5晋穆帝聃"];
+	jinandi[label="10晋安帝德宗"];
+	jingongdi[label="11晋恭帝德文"];
+
+    node [shape=record];
+	rankdir="TB";
+    struct3[label = "晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
+
+	node [shape=rect;shape=plaintext];
+    copyright[label="\nPowered by paldin";fontsize = 12]
+}
