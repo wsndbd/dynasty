@@ -4,7 +4,7 @@ digraph g {
 	graph [ splines="ortho"; dpi = 800 ];
 	graph [fontname="SimHei"];
 	node [shape=plaintext, fontname="SimHei"];
-	//{rank=same; qdhwf; xhdy; tzxwdh};
+	rankdir="TB";
 	
 	 
 	xd->jd;
@@ -52,9 +52,8 @@ digraph g {
 	jinandi[label="10晋安帝德宗"];
 	jingongdi[label="11晋恭帝德文"];
 
-    node [shape=record];
-	rankdir="TB";
-    struct3[label = "晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
+    node [shape=record, fontname="SimHei"];
+    struct3[label="晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
 
 	node [shape=rect;shape=plaintext];
     copyright[label="\nPowered by paldin";fontsize = 12]
