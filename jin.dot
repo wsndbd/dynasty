@@ -5,7 +5,7 @@ digraph g {
 	graph [fontname="SimHei"];
 	node [shape=plaintext, fontname="SimHei"];
 	rankdir="TB";
-    {rank=same; yuandi; liuyuan; shile; lixiong; zhanggui; fujian; lvguang;muronghuang;murongchui;murongde;gaoyun;lihao;yaochang;qifuguoren;tufawugu;duanye;helianbobo;muronghong;ranmin;zhailiao;qiaozong;};
+    {rank=same; yuandi; liuyuan; shile; lixiong; zhanggui; fujian; lvguang;muronghuang;murongchui;murongde;muronghong;gaoyun;lihao;yaochang;qifuguoren;tufawugu;duanye;helianbobo;ranmin;zhailiao;qiaozong;};
 	
 	 
 	xd->jd;
@@ -101,6 +101,88 @@ digraph g {
     zhangxuanliang[label="张玄靓"];
     zhangtianxi[label="张天锡"];
     
+    fujian->fusheng;
+    fusheng->fujian1;
+    fujian1->fupi;
+    fupi->fudeng;
+    fujian[label="符健【前秦】"];
+    fusheng[label="符生"];
+    fujian1[label="符坚"];
+    fupi[label="符丕"];
+    fudeng[label="符登"];
+
+    lvguang->lvzuan;
+    lvzuan->lvlong;
+    lvguang[label="吕光【后凉】"];
+    lvzuan[label="吕纂"];
+    lvlong[label="吕隆"];
+    
+    muronghuang->murongjun;
+    murongjun->murongwei;
+    muronghuang[label="慕容皝【前燕】"];
+    murongjun[label="慕容儁"];
+    murongwei[label="慕容𬀩"];
+    
+    murongchui->murongbao;
+    murongbao->murongsheng;
+    murongsheng->murongxi;
+    murongxi->murongyun;
+    murongchui[label="慕容垂【后燕】"];
+    murongbao[label="慕容宝"];
+    murongsheng[label="慕容盛"];
+    murongxi[label="慕容熙"];
+    murongyun[label="慕容云"];
+    
+    murongde->murongchao;
+    murongde[label="慕容德【南燕】"];
+    murongchao[label="慕容超"];
+
+    muronghong->murongchong;
+    murongchong->duansui;
+    duansui->murongyi;
+    murongyi->murongyao;
+    murongyao->murongzhong;
+    murongzhong->murongyong;
+    muronghong[label="慕容泓【西燕】"];
+    murongchong[label="慕容冲"];
+    duansui[label="段随"];
+    murongyi[label="慕容顗"];
+    murongyao[label="慕容瑶"];
+    murongzhong[label="慕容忠"];
+    murongyong[label="慕容永"];
+
+    lihao->lixin;
+    lixin->lixun;
+    lihao[label="李暠【西凉】"];
+    lixin[label="李歆"];
+    lixun[label="李恂"];
+
+    gaoyun->fengba;
+    fengba->fenghong;
+    gaoyun[label="高云【北燕】"];
+    fengba[label="冯跋"];
+    fenghong[label="冯弘"];
+
+    yaochang->yaoxing;
+    yaoxing->yaohong;
+    yaochang[label="姚苌【后秦】"];
+    yaoxing[label="姚兴"];
+    yaohong[label="姚泓"];
+
+    qifuguoren->qifuqiangui;
+    qifuqiangui->qifuchipan;
+    qifuchipan->qifumumo;
+    qifuguoren[label="乞伏国仁【西秦】"];
+    qifuqiangui[label="乞伏乾归"];
+    qifuchipan[label="乞伏炽磐"];
+    qifumumo[label="乞伏暮末"];
+
+    tufawugu->tufalilugu;
+    tufalilugu->tufanutan;
+    tufawugu[label="秃发乌孤【南凉】"];
+    tufalilugu[label="秃发利鹿孤"];
+    tufanutan[label="秃发傉檀"];
+
     node [shape=record, fontname="SimHei"];
     struct3[label="晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
 
