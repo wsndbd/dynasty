@@ -83,6 +83,24 @@ digraph g {
     lishou[label="李寿"];
     lishi[label="李势"];
     
+    zhanggui->zhangshi;
+    zhangshi->zhangmao;
+    zhangmao->zhangjun;
+    zhangjun->zhangchonghua;
+    zhangchonghua->zhangyaoling;
+    zhangyaoling->zhangzuo;
+    zhangzuo->zhangxuanliang;
+    zhangxuanliang->zhangtianxi;
+    zhanggui[label="张轨【前凉】"];
+    zhangshi[label="张寔"];
+    zhangmao[label="张茂"];
+    zhangjun[label="张骏"];
+    zhangchonghua[label="张重华"];
+    zhangyaoling[label="张曜灵"];
+    zhangzuo[label="张祚"];
+    zhangxuanliang[label="张玄靓"];
+    zhangtianxi[label="张天锡"];
+    
     node [shape=record, fontname="SimHei"];
     struct3[label="晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
 
