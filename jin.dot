@@ -5,6 +5,7 @@ digraph g {
 	graph [fontname="SimHei"];
 	node [shape=plaintext, fontname="SimHei"];
 	rankdir="TB";
+    {rank=same; yuandi; liuyuan; shile; lixiong; zhanggui; fujian; lvguang;muronghuang;murongchui;murongde;gaoyun;lihao;yaochang;qifuguoren;tufawugu;duanye;helianbobo;muronghong;ranmin;zhailiao;qiaozong;};
 	
 	 
 	xd->jd;
@@ -52,6 +53,36 @@ digraph g {
 	jinandi[label="10晋安帝德宗"];
 	jingongdi[label="11晋恭帝德文"];
 
+    liuyuan->liucong;
+    liucong->liucan;
+    liucan->liuyao;
+    liuyuan[label="刘渊【汉赵】"];
+    liucong[label="刘聪"];
+    liucan[label="刘粲"];
+    liuyao[label="刘曜"];
+    
+    shile->shihong;
+    shihong->shihu;
+    shihu->shishi;
+    shishi->shizun;
+    shizun->shijian;
+    shile[label="石勒【后赵】"];
+    shihong[label="石弘"];
+    shihu[label="石虎"];
+    shishi[label="石世"];
+    shizun[label="石遵"];
+    shijian[label="石鉴"];
+    
+    lixiong->liban;
+    liban->liqi;
+    liqi->lishou;
+    lishou->lishi;
+    lixiong[label="李雄【成汉】"];
+    liban[label="李班"];
+    liqi[label="李期"];
+    lishou[label="李寿"];
+    lishi[label="李势"];
+    
     node [shape=record, fontname="SimHei"];
     struct3[label="晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
 
