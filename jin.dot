@@ -5,7 +5,7 @@ digraph g {
 	graph [fontname="SimHei"];
 	node [shape=plaintext, fontname="SimHei"];
 	rankdir="TB";
-    {rank=same; yuandi;lixiong;  liuyuan; shile; zhanggui; lvguang;lihao;tufawugu;duanye;fujian;yaochang;qifuguoren; muronghuang;murongchui;murongde;gaoyun;muronghong;helianbobo;ranmin;zhailiao;qiaozong;};
+    {rank=same; yuandi;lixiong;  liuyuan; shile; zhanggui; lvguang;lihao;tufawugu;duanye;fujian;yaochang;qifuguoren; muronghuang;murongchui;murongde;gaoyun;muronghong;helianbobo;ranmin;zhailiao;};
 	
 	 
 	xd->jd;
@@ -195,13 +195,14 @@ digraph g {
     helianchang[label="赫连昌"];
     helianding[label="赫连定"];
 
+    ranmin->qiaozong[style=invis]
     ranmin[label="冉闵【冉魏】"];
+    qiaozong[label="谯纵【谯蜀】"];
 
     zhailiao->zhaizhao;
     zhailiao[label="翟辽【翟魏】"];
     zhaizhao[label="翟钊"];
 
-    qiaozong[label="谯纵【谯蜀】"];
 
     node [shape=record, fontname="SimHei"];
     struct3[label="晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
