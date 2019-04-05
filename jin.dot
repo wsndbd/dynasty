@@ -5,7 +5,7 @@ digraph g {
 	graph [fontname="SimHei"];
 	node [shape=plaintext, fontname="SimHei"];
 	rankdir="TB";
-    {rank=same; yuandi;lixiong;  liuyuan; shile; zhanggui; lvguang;lihao;tufawugu;duanye;fujian;yaochang;qifuguoren; muronghuang;murongchui;murongde;gaoyun;muronghong;helianbobo;ranmin;zhailiao;};
+    {rank=same; yuandi;lixiong;  liuyuan; shile; zhanggui; lvguang;lihao;tufawugu;duanye;fujian;yaochang;qifuguoren; muronghuang;murongchui;murongde;gaoyun;muronghong;helianbobo;zhailiao;};
 	
 	 
 	xd->jd;
@@ -73,6 +73,9 @@ digraph g {
     shizun[label="石遵"];
     shijian[label="石鉴"];
     
+    shijian->ranmin[style=invis]
+    ranmin->qiaozong[style=invis]
+
     lixiong->liban;
     liban->liqi;
     liqi->lishou;
@@ -195,7 +198,6 @@ digraph g {
     helianchang[label="赫连昌"];
     helianding[label="赫连定"];
 
-    ranmin->qiaozong[style=invis]
     ranmin[label="冉闵【冉魏】"];
     qiaozong[label="谯纵【谯蜀】"];
 
