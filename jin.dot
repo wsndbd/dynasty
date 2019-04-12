@@ -1,13 +1,18 @@
 digraph g {
 	edge [dir=none];
 	node [shape=rect];
-	graph [ splines="ortho"; dpi = 800 ];
+	graph [ splines="ortho"; dpi = 300 ];
 	graph [fontname="SimHei"];
 	node [shape=plaintext, fontname="SimHei"];
 	rankdir="TB";
-    {rank=same; yuandi;lixiong;  liuyuan; shile; zhanggui; lvguang;lihao;tufawugu;duanye;fujian;yaochang;qifuguoren; muronghuang;murongchui;murongde;gaoyun;muronghong;helianbobo;zhailiao;};
-	
+    //{rank=same; yuandi;lixiong;  liuyuan; shile; zhanggui; lvguang;lihao;tufawugu;duanye;fujian;yaochang;qifuguoren; muronghuang;murongchui;murongde;gaoyun;muronghong;helianbobo;zhailiao;};
+
+    node [shape=record, fontname="SimHei"];
+    struct3->copyright[style=invis]; 
+    struct3[label="晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
 	 
+    copyright[label="\nPowered by paldin";fontsize = 12;shape=rect;shape=plaintext]
+
 	xd->jd;
 	xd->wd;
 	xd->lyww;
@@ -53,13 +58,27 @@ digraph g {
 	jinandi[label="10晋安帝德宗"];
 	jingongdi[label="11晋恭帝德文"];
 
+    lixiong->liban;
+    liban->liqi;
+    liqi->lishou;
+    lishou->lishi;
+    lishi->huanwenmie[style=invis];
+    lixiong[label="李雄【成汉】"];
+    liban[label="李班"];
+    liqi[label="李期"];
+    lishou[label="李寿"];
+    lishi[label="李势"];
+    huanwenmie[label="347年被东晋恒温所灭",shape=plaintext];
+    
     liuyuan->liucong;
     liucong->liucan;
     liucan->liuyao;
+    liuyao->shilemie[style=invis];
     liuyuan[label="刘渊【汉赵】"];
     liucong[label="刘聪"];
     liucan[label="刘粲"];
     liuyao[label="刘曜"];
+    shilemie[label="329年被石勒所灭";shape=plaintext];
     
     shile->shihong;
     shihong->shihu;
@@ -74,18 +93,20 @@ digraph g {
     shijian[label="石鉴"];
     
     shijian->ranmin[style=invis]
-    ranmin->qiaozong[style=invis]
-
-    lixiong->liban;
-    liban->liqi;
-    liqi->lishou;
-    lishou->lishi;
-    lixiong[label="李雄【成汉】"];
-    liban[label="李班"];
-    liqi[label="李期"];
-    lishou[label="李寿"];
-    lishi[label="李势"];
+    ranmin->murongjunmie[style=invis]
+    murongjunmie[label="352年被慕容儁所灭";shape=plaintext]
     
+    muronghuang->murongjun;
+    murongjun->murongwei;
+    murongwei->wangmengmie[style=invis]
+    muronghuang[label="慕容皝【前燕】"];
+    murongjun[label="慕容儁"];
+    murongwei[label="慕容𬀩"];
+    wangmengmie[label="370年被前秦王猛灭";shape=plaintext]
+    wangmengmie->murongchui[style=invis];
+
+    murongjunmie->qiaozong[style=invis]
+
     zhanggui->zhangshi;
     zhangshi->zhangmao;
     zhangmao->zhangjun;
@@ -114,17 +135,13 @@ digraph g {
     fupi[label="符丕"];
     fudeng[label="符登"];
 
+    fudeng->yaochang[style=invis]
+
     lvguang->lvzuan;
     lvzuan->lvlong;
     lvguang[label="吕光【后凉】"];
     lvzuan[label="吕纂"];
     lvlong[label="吕隆"];
-    
-    muronghuang->murongjun;
-    murongjun->murongwei;
-    muronghuang[label="慕容皝【前燕】"];
-    murongjun[label="慕容儁"];
-    murongwei[label="慕容𬀩"];
     
     murongchui->murongbao;
     murongbao->murongsheng;
@@ -205,10 +222,4 @@ digraph g {
     zhailiao[label="翟辽【翟魏】"];
     zhaizhao[label="翟钊"];
 
-
-    node [shape=record, fontname="SimHei"];
-    struct3[label="晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
-
-	node [shape=rect;shape=plaintext];
-    copyright[label="\nPowered by paldin";fontsize = 12]
 }
