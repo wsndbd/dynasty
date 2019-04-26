@@ -103,7 +103,8 @@ digraph g {
     murongjun[label="慕容儁"];
     murongwei[label="慕容𬀩"];
     wangmengmie[label="370年被前秦王猛灭";shape=plaintext]
-    wangmengmie->murongchui[style=invis];
+    wangmengmie->muronghong;
+    wangmengmie->murongchui;
 
     murongjunmie->qiaozong[style=invis]
 
@@ -147,15 +148,22 @@ digraph g {
     murongbao->murongsheng;
     murongsheng->murongxi;
     murongxi->murongyun;
+    murongyun->beiweimie[style=invis];
     murongchui[label="慕容垂【后燕】"];
     murongbao[label="慕容宝"];
     murongsheng[label="慕容盛"];
     murongxi[label="慕容熙"];
     murongyun[label="慕容云"];
+    beiweimie[label="397年被北魏切为南北", shape=plaintext]
+    beiweimie->murongde;
+    beiweimie->gaoyun;
+    
     
     murongde->murongchao;
+    murongchao->nanyanbeimie[style=invis];
     murongde[label="慕容德【南燕】"];
     murongchao[label="慕容超"];
+    nanyanbeimie[label="410年被刘裕灭", shape=plaintext]
 
     muronghong->murongchong;
     murongchong->duansui;
@@ -163,6 +171,7 @@ digraph g {
     murongyi->murongyao;
     murongyao->murongzhong;
     murongzhong->murongyong;
+    murongyong->houyanmie[style=invis];
     muronghong[label="慕容泓【西燕】"];
     murongchong[label="慕容冲"];
     duansui[label="段随"];
@@ -170,6 +179,8 @@ digraph g {
     murongyao[label="慕容瑶"];
     murongzhong[label="慕容忠"];
     murongyong[label="慕容永"];
+    houyanmie[label="394年被后燕灭", shape=plaintext]
+    
 
     lihao->lixin;
     lixin->lixun;
@@ -179,9 +190,11 @@ digraph g {
 
     gaoyun->fengba;
     fengba->fenghong;
+    fenghong->beiyanbeimie[style=invis];
     gaoyun[label="高云【北燕】"];
-    fengba[label="冯跋"];
+    fengba[label="冯跋/慕容云"];
     fenghong[label="冯弘"];
+    beiyanbeimie[label="436年被北魏灭", shape=plaintext]
 
     yaochang->yaoxing;
     yaoxing->yaohong;
