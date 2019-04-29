@@ -8,7 +8,7 @@ digraph g {
     //{rank=same; yuandi;lixiong;  liuyuan; shile; zhanggui; lvguang;lihao;tufawugu;duanye;fujian;yaochang;qifuguoren; muronghuang;murongchui;murongde;gaoyun;muronghong;helianbobo;zhailiao;};
 
     node [shape=record, fontname="SimHei"];
-    struct3->copyright[style=invis]; 
+    struct3->copyright[style=dotted]; 
     struct3[label="晋\n265-420|{西晋265-316|{东晋\n317-420|五胡十六国\n304-439}}"];
 	 
     copyright[label="\nPowered by paldin";fontsize = 12;shape=rect;shape=plaintext]
@@ -62,7 +62,7 @@ digraph g {
     liban->liqi;
     liqi->lishou;
     lishou->lishi;
-    lishi->huanwenmie[style=invis];
+    lishi->huanwenmie[style=dotted];
     lixiong[label="李雄【成汉】"];
     liban[label="李班"];
     liqi[label="李期"];
@@ -73,7 +73,7 @@ digraph g {
     liuyuan->liucong;
     liucong->liucan;
     liucan->liuyao;
-    liuyao->shilemie[style=invis];
+    liuyao->shilemie[style=dotted];
     liuyuan[label="刘渊【汉赵】"];
     liucong[label="刘聪"];
     liucan[label="刘粲"];
@@ -92,13 +92,13 @@ digraph g {
     shizun[label="石遵"];
     shijian[label="石鉴"];
     
-    shijian->ranmin[style=invis]
-    ranmin->murongjunmie[style=invis]
+    shijian->ranmin[style=dotted]
+    ranmin->murongjunmie[style=dotted]
     murongjunmie[label="352年被慕容儁所灭";shape=plaintext]
     
     muronghuang->murongjun;
     murongjun->murongwei;
-    murongwei->wangmengmie[style=invis]
+    murongwei->wangmengmie[style=dotted]
     muronghuang[label="慕容皝【前燕】"];
     murongjun[label="慕容儁"];
     murongwei[label="慕容𬀩"];
@@ -106,7 +106,7 @@ digraph g {
     wangmengmie->muronghong;
     wangmengmie->murongchui;
 
-    murongjunmie->qiaozong[style=invis]
+    murongjunmie->qiaozong[style=dotted]
 
     zhanggui->zhangshi;
     zhangshi->zhangmao;
@@ -116,6 +116,7 @@ digraph g {
     zhangyaoling->zhangzuo;
     zhangzuo->zhangxuanliang;
     zhangxuanliang->zhangtianxi;
+    zhangtianxi->qianliangbeimie[style=dotted];
     zhanggui[label="张轨【前凉】"];
     zhangshi[label="张寔"];
     zhangmao[label="张茂"];
@@ -125,6 +126,7 @@ digraph g {
     zhangzuo[label="张祚"];
     zhangxuanliang[label="张玄靓"];
     zhangtianxi[label="张天锡"];
+    qianliangbeimie[label="376年被前秦苻坚灭";shape=plaintext];
     
     fujian->fusheng;
     fusheng->fujian1;
@@ -136,19 +138,21 @@ digraph g {
     fupi[label="符丕"];
     fudeng[label="符登"];
 
-    fudeng->yaochang[style=invis]
+    fudeng->yaochang[style=dotted]
 
     lvguang->lvzuan;
     lvzuan->lvlong;
+    lvlong->houliangbeimie[style=dotted];
     lvguang[label="吕光【后凉】"];
     lvzuan[label="吕纂"];
     lvlong[label="吕隆"];
+    houliangbeimie[label="403年降于后秦";shape=plaintext];
     
     murongchui->murongbao;
     murongbao->murongsheng;
     murongsheng->murongxi;
     murongxi->murongyun;
-    murongyun->beiweimie[style=invis];
+    murongyun->beiweimie[style=dotted];
     murongchui[label="慕容垂【后燕】"];
     murongbao[label="慕容宝"];
     murongsheng[label="慕容盛"];
@@ -160,7 +164,7 @@ digraph g {
     
     
     murongde->murongchao;
-    murongchao->nanyanbeimie[style=invis];
+    murongchao->nanyanbeimie[style=dotted];
     murongde[label="慕容德【南燕】"];
     murongchao[label="慕容超"];
     nanyanbeimie[label="410年被刘裕灭", shape=plaintext]
@@ -171,7 +175,7 @@ digraph g {
     murongyi->murongyao;
     murongyao->murongzhong;
     murongzhong->murongyong;
-    murongyong->houyanmie[style=invis];
+    murongyong->houyanmie[style=dotted];
     muronghong[label="慕容泓【西燕】"];
     murongchong[label="慕容冲"];
     duansui[label="段随"];
@@ -184,15 +188,17 @@ digraph g {
 
     lihao->lixin;
     lixin->lixun;
+    lixun->xiliangbeimie[style=dotted];
     lihao[label="李暠【西凉】"];
     lixin[label="李歆"];
     lixun[label="李恂"];
+    xiliangbeimie[label="420年投降北魏";shape=plaintext];
 
     gaoyun->fengba;
     fengba->fenghong;
-    fenghong->beiyanbeimie[style=invis];
-    gaoyun[label="高云【北燕】"];
-    fengba[label="冯跋/慕容云"];
+    fenghong->beiyanbeimie[style=dotted];
+    gaoyun[label="高云/慕容云【北燕】"];
+    fengba[label="冯跋"];
     fenghong[label="冯弘"];
     beiyanbeimie[label="436年被北魏灭", shape=plaintext]
 
@@ -212,15 +218,19 @@ digraph g {
 
     tufawugu->tufalilugu;
     tufalilugu->tufanutan;
+    tufanutan->nanliangbeimie[style=dotted];
     tufawugu[label="秃发乌孤【南凉】"];
     tufalilugu[label="秃发利鹿孤"];
     tufanutan[label="秃发傉檀"];
+    nanliangbeimie[label="414年降西秦", shape=plaintext];
 
     duanye->juqumengxun;
     juqumengxun->juqumujian;
+    juqumujian->beiliangbeimie[style=dotted];
     duanye[label="段业【北凉】"];
     juqumengxun[label="沮渠蒙逊"];
     juqumujian[label="沮渠牧犍"];
+    beiliangbeimie[label="439年被北魏灭，北魏统一华北",shape=plaintext];
 
     helianbobo->helianchang;
     helianchang->helianding;
