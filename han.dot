@@ -1,18 +1,19 @@
 digraph g {
 	edge [dir=none];
 	node [shape=rect];
-	graph [ splines="ortho"; dpi = 800 ];
-	rankdir="LR";
-	graph [fontname="SimHei"];
+	graph [ splines="ortho"; dpi = 300 ];
 	node [shape=plaintext, fontname="SimHei"];
+	rankdir="TB";
+	graph [fontname="SimHei"];
 	//{rank=same; qdhwf; xhdy; tzxwdh};
-	
-    copyright[label="\nPowered by paldin";fontsize = 12]
+	    
+    struct3->copyright[style=dotted]; 
     
-	"曹魏(220-266)"
-	"三国(220~280)"
-	"刘汉(-202~8---25~220)"
-	
+	node [shape=record, fontname="SimHei"];
+	struct3[label="西汉\n-202~8|东汉\n25~220|三国\n220~280"];
+
+    copyright[label="\nPowered by paldin";fontsize = 12]
+
 	tz->qdhwf
 	tz->xhdy
 	tz->tzxwdh;
