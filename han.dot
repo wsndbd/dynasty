@@ -1,19 +1,11 @@
 digraph g {
+
 	edge [dir=none];
-	node [shape=rect];
-	graph [ splines="ortho"; dpi = 300 ];
-	node [shape=plaintext, fontname="SimHei"];
+	node [shape=plaintext];
+	graph [ splines="ortho"; dpi = 300; fontname="SimHei"];
 	rankdir="TB";
-	graph [fontname="SimHei"];
-	//{rank=same; qdhwf; xhdy; tzxwdh};
+	//{rank=same; qdhwf; xhdy; tzxwdh}
 	    
-    struct3->copyright[style=dotted]; 
-    
-	node [shape=record, fontname="SimHei"];
-	struct3[label="西汉\n-202~8|东汉\n25~220|三国\n220~280"];
-
-    copyright[label="\nPowered by paldin";fontsize = 12]
-
 	tz->qdhwf
 	tz->xhdy
 	tz->tzxwdh;
@@ -144,5 +136,9 @@ digraph g {
 	xldh[label="27孝灵帝宏"];
 	hsdb[label="28后少帝辨"];
 	xdx[label="29献帝协"];
-	
+
+ 	node [shape=record, fontname="SimHei"];
+    //struct3->copyright[style=invis]; 
+	struct3[label="西汉\n-202~8|东汉\n25~220|三国\n220~280"];
+    copyright[label="\nPowered by paldin";fontsize = 12;shape=plaintext];
 }
