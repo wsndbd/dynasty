@@ -1,33 +1,206 @@
 digraph g {
 
-    edge [dir=none];
+    edge [dir=forward];
 	node [shape=plaintext];
 	graph [ splines="ortho"; dpi = 300; fontname="SimHei"];
-	//rankdir="LR";
+	//graph [  dpi = 300; fontname="SimHei"];
+	rankdir="TB";
     //rotate=90;
 
 
     node [shape = box];
     rank=same;
-    {132 dongzhuo;}
+    {132 dongzhuo;taoqian}
+    {133 caiyong}
+    {137 shixie}
+    {139 luzhi}
+    {141 hanfu;hansui}
+    {142 liubiao;}
+    {192;dongzhuoe;caiyonge;luzhie;hanfue;}
+    {194;taoqiane;}
+    {208;liubiaoe}
+    {215;hansuie;}
+    {226 shixiee;}
+
+    {153 yuanshao;}
+    {202 yuanshaoe}
+
+    {154 sunjian}
+    {151 zhongyao;}
+    {153 handang;zhanggong;}
+    {156 zhangzhao}
+    {161 lvdai;}
+    {163 ganning}
+    {191 sunjiane}
+    {212 zhanggonge};
+    {222 ganninge}
+    {223 handange}
+    {230 zhongyaoe;}
+    {236 zhangzhaoe;}
+    {256 lvdaie;}
+
+    {155 caocao}
+    {156 chenlin}
+    {147 jiaxu;}
+    {141 chengyu}
+    {152 dongzhao;wanglang}
+    {153 kongrong}
+    {157 huaxin;xunyou;xiahoudun}
+    {159 hanji}
+    {162 manchong}
+    {163 xunyu}
+    {208 kongronge}
+    {212 xunyue}
+    {214 xunyoue}
+    {217 chenline}
+    {220;chengyue;caocaoe;xiahoudune}
+    {224 jiaxue};
+    {228 wanglange;}
+    {231 huaxine}
+    {232 dongzhaoe;}
+    {238 hanjie}
+    {242 manchonge}
+
     {161 liubei}
-    {191;dongzhuoe;}
-    {222 liubeie;}
+    {148 huangzhong;}
+    {149 xujing;}
+    {162 guanyu}
+    {219 guanyue}
+    {220 huangzhonge}
+    {222 liubeie;xujinge}
 
     130->132;
-    132->140;
-    140->150;
-    150->160;
+    132->133;
+    133->137;
+    137->139;
+    139->140;
+    140->141;
+    141->142;
+    142->147;
+    147->148;
+    148->149;
+    149->150;
+    150->151;
+    151->152;
+    152->153;
+    153->154;
+    154->155;
+    155->156;
+    156->157;
+    157->159;
+    159->160;
     160->161;
-    161->191;
-    191->222;
-
-
+    161->162;
+    162->163;
+    163->170;
+    170->180;
+    180->190;
+    190->191;
+    191->192;
+    192->194;
+    194->200;
+    200->202;
+    202->208;
+    208->210;
+    210->212;
+    212->214;
+    214->215;
+    215->217;
+    217->219;
+    219->220;
+    220->222;
+    222->223;
+    223->224;
+    224->226;
+    226->228;
+    228->230;
+    230->231;
+    231->232;
+    232->236;
+    236->238;
+    238->240;
+    240->242;
+    242->250;
+    250->256;
+    256->260;
+    260->270;
+    270->280;
+    280->290;
+    290->300;
+    
     dongzhuo->dongzhuoe;
+    taoqian->taoqiane;
+    caiyong->caiyonge;
+    shixie->shixiee;
+    luzhi->luzhie;
+    hanfu->hanfue;
+    hansui->hansuie;
+    liubiao->liubiaoe;
+
     liubei->liubeie;
+    huangzhong->huangzhonge;
+    xujing->xujinge;
+    guanyu->guanyue;
+
+    caocao->caocaoe;
+    chengyu->chengyue;
+    jiaxu->jiaxue;
+    dongzhao->dongzhaoe;
+    wanglang->wanglange;
+    kongrong->kongronge;
+    chenlin->chenline;
+    huaxin->huaxine;
+    xunyou->xunyoue;
+    xiahoudun->xiahoudune;
+    hanji->hanjie;
+    manchong->manchonge;
+    xunyu->xunyue;
+
+    sunjian->sunjiane;
+    handang->handange;
+    zhanggong->zhanggonge;
+    zhongyao->zhongyaoe;
+    zhangzhao->zhangzhaoe;
+    lvdai->lvdaie;
+    ganning->ganninge;
+
+    yuanshao->yuanshaoe;
 
    	dongzhuo,dongzhuoe[label="董卓(60)"];
-    liubei,liubeie[label="刘备(62)"];
+    liubei,liubeie[label="刘备(62)", fontcolor=white, color=green,style=filled];
+    taoqian,taoqiane[label="陶谦(62)"];
+    caiyong,caiyonge[label="蔡邕yōng（59）"];
+    shixie,shixiee[label="士燮(89)"];
+    luzhi,luzhie[label="卢植（53）"];
+    chengyu,chengyue[label="程昱(79)"];
+    hanfu,hanfue[label="韩馥(51)"];
+    hansui,hansuie[label="韩遂(74)"];
+    liubiao,liubiaoe[label="刘表(66)"];
+    jiaxu,jiaxue[label="贾诩(77)"];
+    huangzhong,huangzhonge[label="黄忠(72)"];
+    xujing,xujinge[label="许靖(73)"];
+    zhongyao,zhongyaoe[label="钟繇*(79)"];
+    dongzhao,dongzhaoe[label="董昭(80)"];
+    wanglang,wanglange[label="王朗(76)"];
+    handang,handange[label="韩当(70)"];
+    kongrong,kongronge[label="孔融(55)"];
+    yuanshao,yuanshaoe[label="袁绍(49)"];
+    zhanggong,zhanggonge[label="张纮(59)"];
+    sunjian,sunjiane[label="孙坚(37)" fontcolor=white,color=red,style=filled];
+    caocao,caocaoe[label="曹操(65)",fontcolor=white,color=blue,style=filled];
+    chenlin,chenline[label="陈琳(61)"];
+    zhangzhao,zhangzhaoe[label="张昭(80)"];
+    huaxin,huaxine[label="华歆(74)"];
+    xunyou,xunyoue[label="荀攸(57)"];
+    xiahoudun,xiahoudune[label="夏侯敦(63)"];
+    hanji,hanjie[label="韩暨(79)"];
+    lvdai,lvdaie[label="吕岱(95)"];
+    guanyu,guanyue[label="关羽*(57)"];
+    manchong,manchonge[label="满宠(80)"];
+    xunyu,xunyue[label="荀彧(49)"];
+    ganning,ganninge[label="甘宁(59)"];
+
+    130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300[color=red]
 
 //   	dongzhuoe[style=invis];
     //liubeie[style=invis];
